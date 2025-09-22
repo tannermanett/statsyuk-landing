@@ -7,15 +7,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const headersList = await headers();
   let domain = headersList.get("host") as string;
   let protocol = "https";
-  const basePath = "/landing";
 
   return [
     {
-      url: `${protocol}://${domain}${basePath}`,
+      url: `${protocol}://${domain}`,
       lastModified: new Date(),
     },
     ...allPosts.map((post) => ({
-      url: `${protocol}://${domain}${basePath}/blog/${post.slug}`,
+      url: `${protocol}://${domain}/blog/${post.slug}`,
       lastModified: new Date(),
     })),
   ];
