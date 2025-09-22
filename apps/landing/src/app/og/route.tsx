@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { siteConfig } from "@/lib/config";
 import { ImageResponse } from "next/og";
 import { NextRequest } from "next/server";
@@ -43,6 +44,7 @@ export async function GET(req: NextRequest) {
             src={`${siteConfig.url}/logo.webp`}
             width={64}
             height={64}
+            alt="Statsyuk logo"
             style={{
               objectFit: "contain",
             }}
@@ -79,6 +81,7 @@ export async function GET(req: NextRequest) {
         <img
           src={`${siteConfig.url}/dashboard.png`}
           width={900}
+          alt="Product dashboard preview"
           style={{
             position: "relative",
             bottom: -160,
