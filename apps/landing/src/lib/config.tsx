@@ -40,7 +40,7 @@ export const siteConfig = {
           {
             href: "#nhl",
             title: "Pro‑Level Speed",
-            description: "Compare to the game's best — built for youth.",
+            description: "Compare to the game&apos;s best — built for youth.",
           },
           {
             href: "#advantage",
@@ -166,7 +166,7 @@ export const siteConfig = {
       question: "How can I get started with Statsyuk?",
       answer: (
         <span>
-          Join our waitlist to be the first to access the private beta. We're currently 
+          Join our waitlist to be the first to access the private beta. We&apos;re currently 
           piloting with elite minor and junior programs across North America, with a full 
           launch coming soon.
         </span>
@@ -176,7 +176,7 @@ export const siteConfig = {
       question: "What types of insights does Statsyuk provide?",
       answer: (
         <span>
-          Statsyuk tracks every shift and surfaces insights you won't find in a box score. 
+          Statsyuk tracks every shift and surfaces insights you won&apos;t find in a box score. 
           We analyze player performance, development trends, and provide objective data 
           to help players improve and coaches make better decisions.
         </span>

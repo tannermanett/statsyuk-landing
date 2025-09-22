@@ -90,7 +90,7 @@ export default function ValueHighlights() {
         <div className="rounded-lg border p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20">
           <div className="font-semibold text-blue-700 dark:text-blue-300">Lightning Fast</div>
           <p className="text-sm text-muted-foreground mt-2">
-            Process your entire game in minutes, not hours. Get insights while the game is still fresh in everyone's mind.
+            Process your entire game in minutes, not hours. Get insights while the game is still fresh in everyone&apos;s mind.
           </p>
         </div>
         <div className="rounded-lg border p-6 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20">
