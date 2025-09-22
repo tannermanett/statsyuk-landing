@@ -7,7 +7,7 @@ export const BLUR_FADE_DELAY = 0.15;
 export const siteConfig = {
   name: "Statsyuk",
   description: "Turn any hockey video into powerful insights for families, players, and coaches",
-  url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
+  url: (process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000") + "/landing",
   keywords: ["SaaS", "Template", "Next.js", "React", "Tailwind CSS"],
   links: {
     email: "info@statsyuk.com",
