@@ -3,7 +3,7 @@ import Particles from "@/components/magicui/particles";
 
 export default function NhlStatsSection() {
   return (
-    <Section id="nhl" title="Compare yourself to the game's best" subtitle="Pro-level speed, built for youth development" background={
+    <Section id="nhl" title="Compare yourself to the game&apos;s best" subtitle="Pro-level speed, built for youth development" background={
       <Particles
         className="absolute inset-0"
         quantity={140}
@@ -35,7 +35,7 @@ export default function NhlStatsSection() {
           <div className="order-1 lg:order-2 text-center lg:text-left">
             <h3 className="text-2xl font-semibold mb-4">See Our NHL Analytics in Action</h3>
             <p className="text-muted-foreground mb-6">
-              This is our proof of concept - the same technology we're bringing to youth hockey. 
+              This is our proof of concept - the same technology we&apos;re bringing to youth hockey. 
               Experience the depth of insights that will soon be available for junior players.
             </p>
             <a 
