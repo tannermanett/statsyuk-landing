@@ -1,0 +1,106 @@
+<style>
+    .about-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    #team-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .member-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .member-info img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 10px auto;
+    }
+
+    .homepage-content {
+        padding: 0 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+        #team-info {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .member-info img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .homepage-content {
+            padding: 0 20px;
+        }
+        
+        .about-container {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .member-info img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+</style>
+
+<div class="about-container">
+    <h1>About Us</h1>
+    <p>Meet the team. Statsyuk was founded by 3 recent graduates with a passion for hockey and data science. Our team members have diverse backgrounds in computer science, statistics, and business, and share a common goal of revolutionizing the way we analyze and understand the game of hockey. We are dedicated to building a platform that is user-friendly, informative, and innovative, and we are excited to share our progress with the hockey community.</p>
+    <div id="team-info">
+        <div class="member-info">
+            <p>Evan Cohen</p>
+            <img src="headshots/evan.jpeg" alt="Evan Cohen headshot">
+            <p>evan@statsyuk.ca</p>
+            <p>Full Stack Developer</p>
+        </div>
+        <div class="member-info">
+            <p>Noah Gans</p>
+            <img src="headshots/noah.jpeg" alt="Noah Gans headshot">
+            <p>noah@statsyuk.ca</p>
+            <p>Communications & Strategy Director</p>
+        </div>
+        <div class="member-info">
+            <p>Tanner Manett</p>
+            <img src="headshots/tanner.jpeg" alt="Tanner Manett headshot">
+            <p>tanner@statsyuk.ca</p>
+            <p>Data Engineer & Business Strategist</p>
+        </div>
+    </div>
+    <p>We are always looking for feedback and suggestions, so feel free to reach out to us on Twitter, LinkedIn, or via email at info@statsyuk.ca. You can also message us each at our emails posted below. We are excited to hear from you and to continue improving our platform to meet the needs of our users.</p>
+    <h1 style="margin-top: 20px;">The Database</h1>
+    <div class="homepage-content">
+        <p>
+            Our system integrates multiple data sources, including NHL APIs, Moneypuck, and PuckPedia, capturing play-by-play events, salary cap details, player performance metrics, and historical game data. The backend is built in Python, leveraging SQLAlchemy for database management, Pandas and NumPy for data processing, and Requests, Selenium and BeautifulSoup for API integration and web scraping. The database is powered by PostgreSQL, set up on NeonDB, ensuring high scalability and performance for handling large volumes of hockey data. The frontend is being developed with React, using Chart.js to create interactive and visually compelling data visualizations that allow users to explore detailed player stats, game events, and performance trends.
+        </p>
+        <p>
+            But were not done yet! Our long-term goal is to build AI and deep learning models using the rich dataset we are collecting. This includes predictive analytics for player performance, team strategy optimization, and advanced machine learning techniques to model game outcomes, player development, and contract efficiency. By combining traditional statistics with AI, we aim to create the most advanced yet accessible NHL analytics tool, catering to teams, analysts, and hockey enthusiasts alike.
+        </p>
+    </div>
+</div>
