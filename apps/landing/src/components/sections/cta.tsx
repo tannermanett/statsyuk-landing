@@ -2,6 +2,7 @@ import Section from "@/components/section";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function CtaSection() {
   return (
@@ -19,7 +20,7 @@ export default function CtaSection() {
             "w-full sm:w-auto text-background flex gap-2"
           )}
         >
-          <img src="/logo.webp" alt="logo" className="h-7 w-7" />
+          <Image src="/logo.webp" alt="logo" width={28} height={28} className="h-7 w-7" />
           Get started for free
         </Link>
       </div>

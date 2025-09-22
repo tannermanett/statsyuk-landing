@@ -1,5 +1,6 @@
 import Section from "@/components/section";
 import Particles from "@/components/magicui/particles";
+import Image from "next/image";
 
 export default function NhlStatsSection() {
   return (
@@ -25,17 +26,19 @@ export default function NhlStatsSection() {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="order-2 lg:order-1">
-            <img 
+            <Image 
               src="/advanced-board.webp" 
               alt="NHL Analytics Dashboard - Advanced Board View" 
               className="w-full rounded-lg shadow-lg border"
+              width={1200}
+              height={800}
             />
           </div>
           
           <div className="order-1 lg:order-2 text-center lg:text-left">
             <h3 className="text-2xl font-semibold mb-4">See Our NHL Analytics in Action</h3>
             <p className="text-muted-foreground mb-6">
-              This is our proof of concept - the same technology we&apos;re bringing to youth hockey. 
+              This is our proof of concept - the same technology we’re bringing to youth hockey. 
               Experience the depth of insights that will soon be available for junior players.
             </p>
             <a 

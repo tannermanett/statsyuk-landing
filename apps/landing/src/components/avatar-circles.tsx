@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { HTMLAttributes } from "react";
+import Image from "next/image";
 
 export interface AvatarCirclesProps extends HTMLAttributes<HTMLDivElement> {
   numPeople?: number;
@@ -14,7 +15,7 @@ export default function AvatarCircles({
   return (
     <div className={cn("z-10 flex -space-x-4 rtl:space-x-reverse", className)}>
       {avatarUrls.map((url, index) => (
-        <img
+        <Image
           key={index}
           className="h-10 w-10 rounded-full border-2 border-white dark:border-gray-800"
           src={url}

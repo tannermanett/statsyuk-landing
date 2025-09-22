@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FaTwitter, FaLinkedin } from "react-icons/fa";
 
 export const BLUR_FADE_DELAY = 0.15;
@@ -21,7 +22,7 @@ export const siteConfig = {
       trigger: "Features",
       content: {
         main: {
-          icon: <img src="/logo.webp" alt="logo" className="h-6 w-6" />,
+          icon: <Image src="/logo.webp" alt="logo" width={24} height={24} className="h-6 w-6" />,
           title: "Product Overview",
           description: "See key parts of the product at a glance.",
           href: "#value",
@@ -197,7 +198,7 @@ export const siteConfig = {
       answer: (
         <span>
           Statsyuk provides comprehensive support including documentation, video tutorials, 
-          and dedicated customer support. We're committed to helping hockey families 
+          and dedicated customer support. We’re committed to helping hockey families 
           understand and use our insights effectively.
         </span>
       ),

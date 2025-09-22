@@ -1,5 +1,6 @@
 import Section from "@/components/section";
 import Particles from "@/components/magicui/particles";
+import Image from "next/image";
 
 export default function ProofRoadmap() {
   return (
@@ -38,7 +39,7 @@ export default function ProofRoadmap() {
                 rel="noopener noreferrer"
                 className="transition-opacity hover:opacity-80"
               >
-                <img src="/logos/chai-tech.png" alt="Chai Tech Incubator - Supporting innovative startups" className="h-20 w-auto" />
+                <Image src="/logos/chai-tech.png" alt="Chai Tech Incubator - Supporting innovative startups" width={160} height={80} className="h-20 w-auto" />
               </a>
               <a 
                 href="https://www.innovationboostzone.com/ibz-incubation" 
@@ -46,7 +47,7 @@ export default function ProofRoadmap() {
                 rel="noopener noreferrer"
                 className="transition-opacity hover:opacity-80"
               >
-                <img src="/logos/ru-ibz.png" alt="RU-IBZ Innovation Boost Zone - Accelerating startup growth" className="h-20 w-auto" />
+                <Image src="/logos/ru-ibz.png" alt="RU-IBZ Innovation Boost Zone - Accelerating startup growth" width={160} height={80} className="h-20 w-auto" />
               </a>
               <a 
                 href="#" 
@@ -54,7 +55,7 @@ export default function ProofRoadmap() {
                 rel="noopener noreferrer"
                 className="transition-opacity hover:opacity-80"
               >
-                <img src="/logos/644cc9f504dc3168fd1788d1c966d26b1618847872-1.png" alt="Partner Organization - Supporting innovative startups" className="h-20 w-auto" />
+                <Image src="/logos/644cc9f504dc3168fd1788d1c966d26b1618847872-1.png" alt="Partner Organization - Supporting innovative startups" width={160} height={80} className="h-20 w-auto" />
               </a>
               <a 
                 href="#" 
@@ -62,7 +63,7 @@ export default function ProofRoadmap() {
                 rel="noopener noreferrer"
                 className="transition-opacity hover:opacity-80"
               >
-                <img src="/logos/tmu_logo.svg" alt="Toronto Metropolitan University - Supporting innovative startups" className="h-20 w-auto" />
+                <Image src="/logos/tmu_logo.svg" alt="Toronto Metropolitan University - Supporting innovative startups" width={160} height={80} className="h-20 w-auto" />
               </a>
             </div>
           </div>

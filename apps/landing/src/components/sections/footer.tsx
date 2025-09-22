@@ -1,6 +1,7 @@
 import { siteConfig } from "@/lib/config";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -11,7 +12,7 @@ export default function Footer() {
           title={siteConfig.name}
           className="relative mr-6 flex items-center space-x-2"
         >
-          <img src="/logo.webp" alt={siteConfig.name} className="w-auto h-[64px]" />
+          <Image src="/logo.webp" alt={siteConfig.name} width={64} height={64} className="w-auto h-[64px]" />
           <span className="font-bold text-xl">{siteConfig.name}</span>
         </a>
 

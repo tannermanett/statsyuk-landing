@@ -11,6 +11,7 @@ import {
 import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 import { IoMenuSharp } from "react-icons/io5";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 export default function drawerDemo() {
@@ -33,7 +34,7 @@ export default function drawerDemo() {
               title="brand-logo"
               className="relative mr-6 flex items-center space-x-2"
             >
-              <img src="/logo.webp" alt={siteConfig.name} className="w-auto h-[64px]" />
+              <Image src="/logo.webp" alt={siteConfig.name} width={64} height={64} className="w-auto h-[64px]" />
               <span className="font-bold text-xl">{siteConfig.name}</span>
             </Link>
           </div>
@@ -67,7 +68,7 @@ export default function drawerDemo() {
               "w-full sm:w-auto text-background flex gap-2"
             )}
           >
-            <img src="/logo.webp" alt={siteConfig.name} className="h-6 w-6" />
+            <Image src="/logo.webp" alt={siteConfig.name} width={24} height={24} className="h-6 w-6" />
             Get Started for Free
           </Link>
         </DrawerFooter>
