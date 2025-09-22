@@ -1,38 +1,32 @@
-This is tailwind V4
+# Statsyuk Monorepo
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This repository contains:
 
-## Getting Started
+- `apps/landing`: Next.js landing page
+- `apps/nhl-api`: Express + Postgres API and static site (from NHL-Database)
 
-First, run the development server:
+## Development
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Start landing (Next.js):
+  - pnpm run dev:landing
+- Start API (Express on port 3001):
+  - pnpm run dev:api
+- Start both (Windows PowerShell):
+  - pnpm run dev
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Host `apps/landing` (Next.js) on Vercel or similar
+- Host `apps/nhl-api` (Express) on your server/Render/Railway (ensure `PORT`, `DATABASE_URL`, `QUERYPASSWORD` envs)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Environment variables
 
-## Learn More
+- Landing (Next.js):
+  - NEXT_PUBLIC_APP_URL
+  - WAITLIST_SHEET_WEBHOOK_URL (optional)
+- API (Express):
+  - PORT (default 3001)
+  - DATABASE_URL
+  - QUERYPASSWORD
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
